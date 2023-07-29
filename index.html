@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minecraft Treasure Finder</title>
+        <script src="./index.js" defer></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Minecraft Treasure Finder</h1>
+            <p>
+                Stand as close to the x on your treasure map as you can, then type
+                in your position
+            </p>
+            <form id="form">
+                <label for="x">X</label>
+                <input type="number" id="x" name="x" placeholder="63" />
+                <label for="z">Z</label>
+                <input type="number" id="z" name="z" placeholder="-157" />
+                <button type="submit">Calculate!</button>
+            </form>
+        </div>
+        <div class="container" id="treasure-position-container">
+            <h2>Treasure Coordinates</h2>
+            <p id="treasurePosition"></p>
+        </div>        
+        
+    </body>
+</html>
